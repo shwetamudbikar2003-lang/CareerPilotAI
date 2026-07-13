@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Resume</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+<div class="card shadow p-4">
+
+<h2 class="text-center mb-4">My Resume</h2>
+
+<hr>
+
+<h4>{{ resume.full_name }}</h4>
+
+<p><strong>Phone:</strong> {{ resume.phone }}</p>
+
+<p><strong>Email:</strong> {{ resume.email }}</p>
+
+<p><strong>Education:</strong> {{ resume.education }}</p>
+
+<p><strong>Skills:</strong></p>
+
+<p>{{ resume.skills }}</p>
+<a href="/download/" class="btn btn-primary mt-3">
+    📥 Download Resume PDF
+</a>
+</div>
+
+</div>
+
+</body>
+</html>
