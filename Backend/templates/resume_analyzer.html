@@ -1,39 +1,50 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block content %}
 <html>
 <head>
     <title>AI Resume Analyzer</title>
 </head>
 <body>
 
-<h2>AI Resume Analyzer</h2>
+<h2 class="text-center mb-4">
+    🤖 AI Resume Analyzer
+</h2>
+
+<div class="card shadow p-4">
 
 <form method="POST">
     {% csrf_token %}
 
     <textarea
-        name="resume"
-        rows="15"
-        cols="80"
-        placeholder="Paste your resume here..."
+    class="form-control"
+    name="resume"
+    rows="15"
+    placeholder="Paste your resume here..."
     ></textarea>
 
     <br><br>
 
-    <button type="submit">
-        Analyze Resume
+    <button type="submit" class="btn btn-success mt-3">
+    Analyze Resume
     </button>
 
 </form>
+</div>
 
 {% if feedback %}
 
-<hr>
+<div class="card shadow mt-4">
+    <div class="card-header bg-success text-white">
+        <h4>Analysis Result</h4>
+    </div>
 
-<h3>Analysis</h3>
-
-<pre>{{ feedback }}</pre>
+    <div class="card-body">
+        <pre>{{ feedback }}</pre>
+    </div>
+</div>
 
 {% endif %}
-
-</body>
 </html>
+
+{% endblock %}

@@ -1,32 +1,59 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>AI Career Guidance</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-<h2>AI Career Guidance</h2>
+{% block content %}
 
-<form method="POST">
-    {% csrf_token %}
+<div class="container mt-5">
 
-    <textarea
-        name="interests"
-        rows="10"
-        cols="80"
-        placeholder="Example: I am an ECE student. I know Python and Django. I want a backend developer job."
-    ></textarea>
+    <div class="card shadow">
 
-    <br><br>
+        <div class="card-header bg-info text-white">
+            <h2 class="text-center">💼 AI Career Guidance</h2>
+        </div>
 
-    <button type="submit">Get Career Advice</button>
-</form>
+        <div class="card-body">
 
-{% if advice %}
-<hr>
-<h3>Career Advice</h3>
-<pre>{{ advice }}</pre>
-{% endif %}
+            <form method="POST">
+                {% csrf_token %}
 
-</body>
-</html>
+                <div class="mb-3">
+                    <label class="form-label"><strong>Your Interests</strong></label>
+
+                    <textarea
+                        name="interests"
+                        class="form-control"
+                        rows="8"
+                        placeholder="Example: I am an ECE student. I know Python, Django and MySQL. I want to become a Backend Developer."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-info">
+                    Get Career Advice
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    {% if advice %}
+
+    <div class="card shadow mt-4">
+
+        <div class="card-header bg-success text-white">
+            <h4>Career Advice</h4>
+        </div>
+
+        <div class="card-body">
+
+            <pre style="white-space: pre-wrap;">{{ advice }}</pre>
+
+        </div>
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+{% endblock %}

@@ -1,116 +1,65 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 
 {% block content %}
 
-<h2 class="mb-4">
-Welcome {{ request.user.username }}
-</h2>
-<div class="row mb-4">
+<h2 class="mb-4">Welcome, {{ request.user.username }} 👋</h2>
+
+<div class="row g-4">
 
     <div class="col-md-4">
-        <div class="card bg-primary text-white shadow">
+        <div class="card shadow h-100">
             <div class="card-body text-center">
-                <h3>{{ resume_count }}</h3>
-                <p>Resume Created</p>
+                <h1>📄</h1>
+                <h5>Resume Builder</h5>
+                <p>Create and manage your professional resume.</p>
+                <a href="/resume/" class="btn btn-primary">Open</a>
             </div>
         </div>
     </div>
 
     <div class="col-md-4">
-        <div class="card bg-success text-white shadow">
+        <div class="card shadow h-100">
             <div class="card-body text-center">
-                <h3>3</h3>
-                <p>AI Features</p>
+                <h1>🤖</h1>
+                <h5>AI Resume Analyzer</h5>
+                <p>Analyze your resume with Gemini AI.</p>
+                <a href="/resume-analyzer/" class="btn btn-success">Analyze</a>
             </div>
         </div>
     </div>
 
     <div class="col-md-4">
-        <div class="card bg-warning text-dark shadow">
+        <div class="card shadow h-100">
             <div class="card-body text-center">
-                <h3>100%</h3>
-                <p>Profile Status</p>
+                <h1>🎤</h1>
+                <h5>Interview Practice</h5>
+                <p>Generate AI interview questions.</p>
+                <a href="/interview/" class="btn btn-warning">Practice</a>
             </div>
         </div>
     </div>
 
-</div>
-<div class="row">
+    <div class="col-md-4">
+        <div class="card shadow h-100">
+            <div class="card-body text-center">
+                <h1>💼</h1>
+                <h5>Career Guidance</h5>
+                <p>Get personalized AI career advice.</p>
+                <a href="/career-guidance/" class="btn btn-info">Explore</a>
+            </div>
+        </div>
+    </div>
 
-<div class="col-md-4 mb-3">
-<div class="card shadow">
-<div class="card-body text-center">
-
-<h4>📄 Resume</h4>
-
-<a href="{% url 'resume' %}"
-class="btn btn-primary">
-Open
-</a>
-
-</div>
-</div>
-</div>
-
-<div class="col-md-4 mb-3">
-<div class="card shadow">
-<div class="card-body text-center">
-
-<h4>🤖 Review</h4>
-
-<a href="{% url 'resume_review' %}"
-class="btn btn-warning">
-Review
-</a>
-
-</div>
-</div>
-</div>
-
-<div class="col-md-4 mb-3">
-<div class="card shadow">
-<div class="card-body text-center">
-
-<h4>🎤 Interview</h4>
-
-<a href="{% url 'interview' %}"
-class="btn btn-success">
-Practice
-</a>
-
-</div>
-</div>
-</div>
-
-<div class="col-md-4 mb-3">
-<div class="card shadow">
-<div class="card-body text-center">
-
-<h4>💼 Jobs</h4>
-
-<a href="{% url 'jobs' %}"
-class="btn btn-info">
-Jobs
-</a>
-
-</div>
-</div>
-</div>
-
-<div class="col-md-4 mb-3">
-<div class="card shadow">
-<div class="card-body text-center">
-
-<h4>👤 Profile</h4>
-
-<a href="{% url 'profile' %}"
-class="btn btn-secondary">
-Profile
-</a>
-
-</div>
-</div>
-</div>
+    <div class="col-md-4">
+        <div class="card shadow h-100">
+            <div class="card-body text-center">
+                <h1>👤</h1>
+                <h5>Profile</h5>
+                <p>View your account details.</p>
+                <a href="/profile/" class="btn btn-secondary">Profile</a>
+            </div>
+        </div>
+    </div>
 
 </div>
 

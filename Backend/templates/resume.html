@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block content %}
 <html lang="en">
 <head>
     <title>Resume Builder</title>
@@ -10,7 +12,11 @@
 
 <div class="container mt-5" style="max-width:700px;">
 
-<h2 class="text-center mb-4">📄 Resume Builder</h2>
+<h2 class="mb-4 text-center">
+    📄 Resume Builder
+</h2>
+
+<div class="card shadow p-4">
 
 <form method="POST">
 
@@ -23,8 +29,11 @@
     </button>
 
 </form>
+</div>
 
 </div>
 
 </body>
 </html>
+
+{% endblock %}
