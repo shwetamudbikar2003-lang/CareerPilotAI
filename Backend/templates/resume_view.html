@@ -30,6 +30,14 @@
 <a href="/download/" class="btn btn-primary mt-3">
     📥 Download Resume PDF
 </a>
+<a href="/edit_resume/" class="btn btn-warning mt-3">
+    ✏️ Edit Resume
+</a>
+<a href="{% url 'delete_resume' %}"
+   class="btn btn-danger mt-3"
+   onclick="return confirm('Are you sure you want to delete your resume?');">
+   🗑 Delete Resume
+</a>
 </div>
 
 </div>

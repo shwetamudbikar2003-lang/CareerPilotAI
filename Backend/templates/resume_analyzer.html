@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resume Analyzer</title>
+</head>
+<body>
+
+<h2>AI Resume Analyzer</h2>
+
+<form method="POST">
+    {% csrf_token %}
+
+    <textarea
+        name="resume"
+        rows="15"
+        cols="80"
+        placeholder="Paste your resume here..."
+    ></textarea>
+
+    <br><br>
+
+    <button type="submit">
+        Analyze Resume
+    </button>
+
+</form>
+
+{% if feedback %}
+
+<hr>
+
+<h3>Analysis</h3>
+
+<pre>{{ feedback }}</pre>
+
+{% endif %}
+
+</body>
+</html>

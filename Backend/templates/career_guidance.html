@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Career Guidance</title>
+</head>
+<body>
+
+<h2>AI Career Guidance</h2>
+
+<form method="POST">
+    {% csrf_token %}
+
+    <textarea
+        name="interests"
+        rows="10"
+        cols="80"
+        placeholder="Example: I am an ECE student. I know Python and Django. I want a backend developer job."
+    ></textarea>
+
+    <br><br>
+
+    <button type="submit">Get Career Advice</button>
+</form>
+
+{% if advice %}
+<hr>
+<h3>Career Advice</h3>
+<pre>{{ advice }}</pre>
+{% endif %}
+
+</body>
+</html>

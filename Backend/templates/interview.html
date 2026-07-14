@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Interview Practice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+
+<h2 class="mb-4">🎤 AI Interview Practice</h2>
+
+<form method="POST">
+
+{% csrf_token %}
+
+<label>Select Role</label>
+
+<select class="form-control" name="role">
+
+<option>Python Developer</option>
+
+<option>Manual Tester</option>
+
+<option>Data Analyst</option>
+
+</select>
+
+<br>
+
+<button class="btn btn-primary">
+Generate Questions
+</button>
+
+</form>
+
+{% if questions %}
+
+<div class="card mt-4 p-4 shadow">
+
+<h4>Interview Questions</h4>
+
+<div class="card mt-4 p-4">
+    <pre>{{ questions }}</pre>
+</div>
+
+</div>
+
+{% endif %}
+
+</div>
+
+</body>
+</html>

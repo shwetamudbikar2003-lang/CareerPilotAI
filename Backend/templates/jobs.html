@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Recommendations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+
+<h2>💼 Job Recommendation</h2>
+
+<form method="POST">
+
+{% csrf_token %}
+
+<div class="mb-3">
+<label>Enter Skills (comma separated)</label>
+<input type="text"
+class="form-control"
+name="skills"
+placeholder="Python,Django,MySQL">
+</div>
+
+<button class="btn btn-primary">
+Find Jobs
+</button>
+
+</form>
+
+{% if jobs %}
+
+<div class="card mt-4 p-4">
+
+<h4>Recommended Jobs</h4>
+
+<ul>
+
+{% for job in jobs %}
+
+<li>{{ job }}</li>
+
+{% endfor %}
+
+</ul>
+
+</div>
+
+{% endif %}
+
+</div>
+
+</body>
+</html>
