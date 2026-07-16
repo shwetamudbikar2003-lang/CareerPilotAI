@@ -9,7 +9,6 @@ from reportlab.pdfgen import canvas
 from .forms import ResumeForm
 from .gemini import generate_interview_questions
 from .gemini import client
-@login_required
 
 def home(request):
     return render(request, "home.html")
@@ -54,10 +53,6 @@ def user_login(request):
 
     return render(request, "login.html")
 
-def dashboard(request):
-    return render(request,"dashboard.html")
-
-@login_required
 @login_required
 def resume_builder(request):
 

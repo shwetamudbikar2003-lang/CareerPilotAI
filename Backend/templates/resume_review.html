@@ -1,37 +1,75 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>AI Resume Review</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
+{% extends "base.html" %}
 
-<body>
+{% block content %}
 
-<div class="container mt-5">
+<div class="hero">
 
-<h2 class="mb-4">🤖 AI Resume Review</h2>
+<h1>Resume Review 📊</h1>
 
-<div class="card shadow p-4">
+<p>
 
-<h4>{{ resume.full_name }}</h4>
+AI analysis of your uploaded resume.
 
-<hr>
+</p>
 
-<h5>AI Suggestions</h5>
+</div>
 
-<ul>
+<div class="card p-5">
 
-{% for suggestion in suggestions %}
+<h2 class="text-success">
 
-<li>{{ suggestion }}</li>
+<i class="bi bi-check-circle-fill"></i>
 
-{% endfor %}
+ATS Score
+
+</h2>
+
+<div class="progress my-4" style="height:30px;">
+
+<div class="progress-bar bg-success"
+
+style="width:85%;">
+
+85%
+
+</div>
+
+</div>
+
+<h4 class="mb-3">
+
+Suggestions
+
+</h4>
+
+<ul class="list-group">
+
+<li class="list-group-item">
+
+✔ Add more technical skills
+
+</li>
+
+<li class="list-group-item">
+
+✔ Mention measurable achievements
+
+</li>
+
+<li class="list-group-item">
+
+✔ Improve project descriptions
+
+</li>
+
+<li class="list-group-item">
+
+✔ Add GitHub & LinkedIn profile
+
+</li>
 
 </ul>
 
 </div>
 
-</div>
-
-</body>
-</html>
+{% endblock %}

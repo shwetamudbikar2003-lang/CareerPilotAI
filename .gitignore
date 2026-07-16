@@ -3,5 +3,8 @@ __pycache__/
 *.pyc
 db.sqlite3
 .env
+staticfiles/
+.media/
 .idea/
 .vscode/
+.DS_Store

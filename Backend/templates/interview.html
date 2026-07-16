@@ -2,57 +2,124 @@
 
 {% block content %}
 
-<div class="container mt-5">
+<div class="hero">
 
-    <div class="card shadow">
+<h1>Interview Preparation 🎤</h1>
 
-        <div class="card-header bg-warning text-dark">
-            <h2 class="text-center">🎤 AI Interview Practice</h2>
-        </div>
+<p>
 
-        <div class="card-body">
+Practice technical and HR interview questions.
 
-            <form method="POST">
-                {% csrf_token %}
+</p>
 
-                <div class="mb-3">
-                    <label class="form-label"><strong>Job Role</strong></label>
+</div>
 
-                    <input
-                        type="text"
-                        name="role"
-                        class="form-control"
-                        placeholder="Enter job role (Example: Python Developer)"
-                        required>
-                </div>
+<div class="card p-5">
 
-                <button type="submit" class="btn btn-warning">
-                    Generate Interview Questions
-                </button>
+<h3 class="mb-4">
 
-            </form>
+Top Interview Questions
 
-        </div>
+</h3>
 
-    </div>
+<div class="accordion" id="accordionExample">
 
-    {% if questions %}
+<div class="accordion-item">
 
-    <div class="card shadow mt-4">
+<h2 class="accordion-header">
 
-        <div class="card-header bg-success text-white">
-            <h4>Generated Interview Questions</h4>
-        </div>
+<button class="accordion-button"
 
-        <div class="card-body">
+data-bs-toggle="collapse"
 
-            <pre style="white-space: pre-wrap;">{{ questions }}</pre>
+data-bs-target="#q1">
 
-        </div>
+Tell me about yourself.
 
-    </div>
+</button>
 
-    {% endif %}
+</h2>
+
+<div id="q1"
+
+class="accordion-collapse collapse show">
+
+<div class="accordion-body">
+
+Introduce yourself professionally by covering your
+education, skills, projects, and career goals.
+
+</div>
+
+</div>
+
+</div>
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed"
+
+data-bs-toggle="collapse"
+
+data-bs-target="#q2">
+
+Why should we hire you?
+
+</button>
+
+</h2>
+
+<div id="q2"
+
+class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+Highlight your technical skills,
+problem-solving ability,
+and willingness to learn.
+
+</div>
+
+</div>
+
+</div>
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed"
+
+data-bs-toggle="collapse"
+
+data-bs-target="#q3">
+
+What are your strengths?
+
+</button>
+
+</h2>
+
+<div id="q3"
+
+class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+Discuss your communication,
+adaptability,
+and technical knowledge.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 </div>
 

@@ -2,57 +2,107 @@
 
 {% block content %}
 
-<div class="container mt-5">
+<div class="hero fade-up">
 
-    <div class="card shadow">
+<div class="row align-items-center">
 
-        <div class="card-header bg-info text-white">
-            <h2 class="text-center">💼 AI Career Guidance</h2>
-        </div>
+<div class="col-lg-8">
 
-        <div class="card-body">
+<h1>Career Guidance 🎯</h1>
 
-            <form method="POST">
-                {% csrf_token %}
+<p class="mt-3">
 
-                <div class="mb-3">
-                    <label class="form-label"><strong>Your Interests</strong></label>
+Discover career paths, recommended skills, salary insights,
+and learning roadmaps powered by AI.
 
-                    <textarea
-                        name="interests"
-                        class="form-control"
-                        rows="8"
-                        placeholder="Example: I am an ECE student. I know Python, Django and MySQL. I want to become a Backend Developer."
-                        required></textarea>
-                </div>
+</p>
 
-                <button type="submit" class="btn btn-info">
-                    Get Career Advice
-                </button>
+</div>
 
-            </form>
+<div class="col-lg-4 text-center">
 
-        </div>
+<i class="bi bi-compass-fill"
+style="font-size:140px;color:white;"></i>
 
-    </div>
+</div>
 
-    {% if advice %}
+</div>
 
-    <div class="card shadow mt-4">
+</div>
 
-        <div class="card-header bg-success text-white">
-            <h4>Career Advice</h4>
-        </div>
+<div class="row g-4">
 
-        <div class="card-body">
+<div class="col-md-4">
 
-            <pre style="white-space: pre-wrap;">{{ advice }}</pre>
+<div class="dashboard-card">
 
-        </div>
+<i class="bi bi-code-slash"></i>
 
-    </div>
+<h4>Python Developer</h4>
 
-    {% endif %}
+<p>
+
+Python, Django, REST API, SQL
+
+</p>
+
+<button class="btn btn-primary">
+
+Explore
+
+</button>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="dashboard-card">
+
+<i class="bi bi-cpu-fill"></i>
+
+<h4>AI / ML Engineer</h4>
+
+<p>
+
+Python, TensorFlow, Machine Learning
+
+</p>
+
+<button class="btn btn-success">
+
+Explore
+
+</button>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="dashboard-card">
+
+<i class="bi bi-shield-check"></i>
+
+<h4>Software Tester</h4>
+
+<p>
+
+Manual Testing, Selenium, SQL
+
+</p>
+
+<button class="btn btn-warning">
+
+Explore
+
+</button>
+
+</div>
+
+</div>
 
 </div>
 

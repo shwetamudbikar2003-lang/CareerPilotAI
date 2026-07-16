@@ -1,0 +1,786 @@
+/* ===========================
+   CAREERPILOT AI
+   PROFESSIONAL UI
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+background:#f4f8ff;
+
+color:#1f2937;
+
+overflow-x:hidden;
+
+}
+
+/*==========================
+NAVBAR
+===========================*/
+
+.navbar{
+
+background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+padding:15px 0;
+
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+}
+
+.navbar-brand{
+
+font-size:26px;
+
+font-weight:700;
+
+letter-spacing:.5px;
+
+}
+
+.nav-link{
+
+color:white !important;
+
+font-weight:500;
+
+margin-left:18px;
+
+transition:.3s;
+
+}
+
+.nav-link:hover{
+
+color:#ffd43b !important;
+
+transform:translateY(-2px);
+
+}
+
+.navbar .btn{
+
+font-weight:600;
+
+border-radius:50px;
+
+padding:8px 20px;
+
+transition:.3s;
+
+}
+
+.navbar .btn:hover{
+
+transform:translateY(-2px);
+
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+/*==========================
+PAGE
+===========================*/
+
+main{
+
+min-height:80vh;
+
+padding-top:40px;
+
+padding-bottom:50px;
+
+}
+
+/*==========================
+CARDS
+===========================*/
+
+.card{
+
+border:none;
+
+border-radius:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.35s;
+
+overflow:hidden;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 20px 40px rgba(37,99,235,.20);
+
+}
+
+.card-header{
+
+background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+color:white;
+
+font-weight:600;
+
+border:none;
+
+}
+
+/*==========================
+BUTTONS
+===========================*/
+
+.btn-primary{
+
+background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+border:none;
+
+border-radius:40px;
+
+padding:10px 28px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 15px 30px rgba(37,99,235,.30);
+
+}
+
+.btn-success{
+
+border-radius:40px;
+
+}
+
+.btn-danger{
+
+border-radius:40px;
+
+}
+
+.btn-warning{
+
+border-radius:40px;
+
+}
+
+.btn-info{
+
+border-radius:40px;
+
+}
+
+/*==========================
+FORMS
+===========================*/
+
+.form-control{
+
+border-radius:12px;
+
+padding:12px;
+
+border:1px solid #dbe4f0;
+
+transition:.3s;
+
+}
+
+.form-control:focus{
+
+border-color:#2563eb;
+
+box-shadow:0 0 0 .2rem rgba(37,99,235,.15);
+
+}
+
+label{
+
+font-weight:600;
+
+margin-bottom:6px;
+
+}
+
+/*==========================
+TABLES
+===========================*/
+
+.table{
+
+background:white;
+
+border-radius:15px;
+
+overflow:hidden;
+
+}
+
+.table thead{
+
+background:#2563eb;
+
+color:white;
+
+}
+
+/*==========================
+HERO SECTION
+==========================*/
+
+.hero{
+background:linear-gradient(135deg,#2563eb,#4f46e5);
+padding:80px 40px;
+border-radius:25px;
+color:#fff;
+margin-bottom:40px;
+box-shadow:0 20px 45px rgba(37,99,235,.25);
+}
+
+.hero h1{
+font-size:48px;
+font-weight:700;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+opacity:.95;
+}
+
+.hero .btn{
+margin-top:20px;
+padding:12px 30px;
+border-radius:50px;
+font-weight:600;
+}
+
+/*==========================
+DASHBOARD
+==========================*/
+
+.dashboard-card{
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.35s;
+text-align:center;
+height:100%;
+}
+
+.dashboard-card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(37,99,235,.18);
+}
+
+.dashboard-card i{
+font-size:45px;
+margin-bottom:15px;
+color:#2563eb;
+}
+
+.dashboard-card h4{
+font-size:22px;
+font-weight:600;
+margin-bottom:10px;
+}
+
+.dashboard-card p{
+color:#6b7280;
+}
+
+/*==========================
+LOGIN & REGISTER
+==========================*/
+
+.auth-card{
+max-width:480px;
+margin:40px auto;
+background:#fff;
+padding:40px;
+border-radius:25px;
+box-shadow:0 20px 45px rgba(0,0,0,.10);
+}
+
+.auth-card h2{
+text-align:center;
+margin-bottom:30px;
+font-weight:700;
+color:#2563eb;
+}
+
+.auth-card .form-control{
+margin-bottom:18px;
+}
+
+/*==========================
+FEATURE BOXES
+==========================*/
+
+.feature-box{
+background:#fff;
+border-radius:20px;
+padding:30px;
+text-align:center;
+transition:.35s;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+height:100%;
+}
+
+.feature-box:hover{
+transform:translateY(-10px);
+}
+
+.feature-box i{
+font-size:45px;
+color:#4f46e5;
+margin-bottom:15px;
+}
+
+.feature-box h4{
+font-weight:600;
+margin-bottom:10px;
+}
+
+/*==========================
+FOOTER
+==========================*/
+
+footer{
+background:#0f172a;
+color:#fff;
+padding:40px 0;
+margin-top:60px;
+}
+
+footer h4{
+font-weight:700;
+margin-bottom:15px;
+}
+
+footer p{
+opacity:.85;
+}
+
+/*==========================
+ANIMATION
+==========================*/
+
+.fade-up{
+animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* LOGIN EFFECT */
+
+.auth-card{
+
+background:white;
+
+border-radius:25px;
+
+padding:45px;
+
+box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+transition:.35s;
+
+}
+
+.auth-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 25px 55px rgba(37,99,235,.20);
+
+}
+
+.auth-card input{
+
+height:52px;
+
+}
+
+.auth-card button{
+
+height:52px;
+
+font-size:17px;
+
+font-weight:600;
+
+}
+
+/*==========================
+RESUME BUILDER
+==========================*/
+
+textarea{
+
+resize:none;
+
+}
+
+.card{
+
+animation:fadeUp .7s ease;
+
+}
+
+.form-control{
+
+font-size:15px;
+
+}
+
+.form-control::placeholder{
+
+color:#9ca3af;
+
+}
+
+label{
+
+font-size:15px;
+
+color:#374151;
+
+}
+
+.btn-lg{
+
+padding:12px 35px;
+
+font-size:18px;
+
+}
+/*==========================
+UPLOAD BOX
+==========================*/
+
+.upload-box{
+
+border:3px dashed #2563eb;
+
+padding:50px;
+
+border-radius:20px;
+
+text-align:center;
+
+background:#f8fbff;
+
+transition:.3s;
+
+}
+
+.upload-box:hover{
+
+background:#eef5ff;
+
+transform:translateY(-5px);
+
+}
+
+.upload-box i{
+
+font-size:70px;
+
+color:#2563eb;
+
+}
+
+.upload-box input{
+
+margin-top:25px;
+
+}
+
+/* Progress */
+
+.progress{
+
+height:28px;
+
+border-radius:50px;
+
+}
+
+.progress-bar{
+
+font-weight:600;
+
+font-size:15px;
+
+}
+
+/* Accordion */
+
+.accordion-item{
+
+border:none;
+
+margin-bottom:15px;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.accordion-button{
+
+font-weight:600;
+
+}
+
+/* Tables */
+
+.table{
+
+border-radius:15px;
+
+overflow:hidden;
+
+}
+
+/* Alerts */
+
+.alert{
+
+border-radius:15px;
+
+}
+
+/* Hover */
+
+.btn:hover{
+
+transform:translateY(-3px);
+
+transition:.3s;
+
+}
+
+.card{
+
+transition:.35s;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero{
+
+padding:40px 25px;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.dashboard-card{
+
+margin-bottom:20px;
+
+}
+
+}
+/* =========================
+   PREMIUM UI
+========================= */
+
+body{
+
+background:linear-gradient(to bottom,#eef5ff,#f9fbff);
+
+}
+
+/* Glass Navbar */
+
+.glass-navbar{
+
+background:rgba(37,99,235,.92)!important;
+
+backdrop-filter:blur(10px);
+
+box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+/* Gradient Buttons */
+
+.btn-primary{
+
+background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+border:none;
+
+}
+
+.btn-success{
+
+background:linear-gradient(135deg,#10b981,#059669);
+
+border:none;
+
+}
+
+.btn-warning{
+
+background:linear-gradient(135deg,#f59e0b,#d97706);
+
+border:none;
+
+color:white;
+
+}
+
+.btn-info{
+
+background:linear-gradient(135deg,#06b6d4,#0891b2);
+
+border:none;
+
+color:white;
+
+}
+
+/* Card Glow */
+
+.dashboard-card{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.dashboard-card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-100%;
+
+width:100%;
+
+height:100%;
+
+background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);
+
+transition:.8s;
+
+}
+
+.dashboard-card:hover::before{
+
+left:100%;
+
+}
+
+/* Icon Circle */
+
+.dashboard-card i{
+
+width:90px;
+
+height:90px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+margin:auto;
+
+border-radius:50%;
+
+background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+color:white;
+
+font-size:38px;
+
+margin-bottom:20px;
+
+}
+
+/* Hero */
+
+.hero{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.hero::after{
+
+content:"";
+
+position:absolute;
+
+right:-80px;
+
+top:-80px;
+
+width:250px;
+
+height:250px;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.08);
+
+}

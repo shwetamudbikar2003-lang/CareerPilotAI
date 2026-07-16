@@ -2,63 +2,204 @@
 
 {% block content %}
 
-<h2 class="mb-4">Welcome, {{ request.user.username }} 👋</h2>
+<!-- Hero Section -->
+
+<div class="hero fade-up">
+
+    <div class="row align-items-center">
+
+        <div class="col-lg-8">
+
+            <h1>Welcome, {{ request.user.username }} 👋</h1>
+
+            <p class="mt-4 fs-5">
+                Build your future with AI. Create ATS-friendly resumes,
+                receive AI career guidance, practice interviews,
+                and discover job opportunities—all in one place.
+            </p>
+
+            <a href="{% url 'resume' %}" class="btn btn-light btn-lg mt-3">
+                <i class="bi bi-file-earmark-text"></i>
+                Build Resume
+            </a>
+
+        </div>
+
+        <div class="col-lg-4 text-center">
+
+            <i class="bi bi-robot"
+               style="font-size:130px;color:white;"></i>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Statistics -->
+
+<div class="row g-4 mb-5">
+
+    <div class="col-md-3">
+
+        <div class="card shadow-lg border-0 rounded-4 text-center p-4">
+
+            <h2 class="text-primary fw-bold">92%</h2>
+
+            <p class="mb-0">ATS Score</p>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="card shadow-lg border-0 rounded-4 text-center p-4">
+
+            <h2 class="text-success fw-bold">15</h2>
+
+            <p class="mb-0">Jobs Available</p>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="card shadow-lg border-0 rounded-4 text-center p-4">
+
+            <h2 class="text-warning fw-bold">6</h2>
+
+            <p class="mb-0">Practice Tests</p>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="card shadow-lg border-0 rounded-4 text-center p-4">
+
+            <h2 class="text-danger fw-bold">24×7</h2>
+
+            <p class="mb-0">AI Support</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Main Features -->
 
 <div class="row g-4">
 
-    <div class="col-md-4">
-        <div class="card shadow h-100">
-            <div class="card-body text-center">
-                <h1>📄</h1>
-                <h5>Resume Builder</h5>
-                <p>Create and manage your professional resume.</p>
-                <a href="/resume/" class="btn btn-primary">Open</a>
-            </div>
+    <div class="col-lg-4 col-md-6">
+
+        <div class="dashboard-card">
+
+            <i class="bi bi-file-earmark-text-fill"></i>
+
+            <h4>Resume Builder</h4>
+
+            <p>Create a professional ATS-friendly resume in minutes.</p>
+
+            <a href="{% url 'resume' %}" class="btn btn-primary mt-3">
+                Open
+            </a>
+
         </div>
+
     </div>
 
-    <div class="col-md-4">
-        <div class="card shadow h-100">
-            <div class="card-body text-center">
-                <h1>🤖</h1>
-                <h5>AI Resume Analyzer</h5>
-                <p>Analyze your resume with Gemini AI.</p>
-                <a href="/resume-analyzer/" class="btn btn-success">Analyze</a>
-            </div>
+    <div class="col-lg-4 col-md-6">
+
+        <div class="dashboard-card">
+
+            <i class="bi bi-search"></i>
+
+            <h4>AI Resume Analyzer</h4>
+
+            <p>Analyze your resume and improve your ATS score instantly.</p>
+
+            <a href="{% url 'resume_analyzer' %}" class="btn btn-success mt-3">
+                Analyze
+            </a>
+
         </div>
+
     </div>
 
-    <div class="col-md-4">
-        <div class="card shadow h-100">
-            <div class="card-body text-center">
-                <h1>🎤</h1>
-                <h5>Interview Practice</h5>
-                <p>Generate AI interview questions.</p>
-                <a href="/interview/" class="btn btn-warning">Practice</a>
-            </div>
+    <div class="col-lg-4 col-md-6">
+
+        <div class="dashboard-card">
+
+            <i class="bi bi-mic-fill"></i>
+
+            <h4>Interview Practice</h4>
+
+            <p>Prepare for HR and technical interviews with AI.</p>
+
+            <a href="{% url 'interview' %}" class="btn btn-warning mt-3">
+                Practice
+            </a>
+
         </div>
+
     </div>
 
-    <div class="col-md-4">
-        <div class="card shadow h-100">
-            <div class="card-body text-center">
-                <h1>💼</h1>
-                <h5>Career Guidance</h5>
-                <p>Get personalized AI career advice.</p>
-                <a href="/career-guidance/" class="btn btn-info">Explore</a>
-            </div>
+    <div class="col-lg-4 col-md-6">
+
+        <div class="dashboard-card">
+
+            <i class="bi bi-compass-fill"></i>
+
+            <h4>Career Guidance</h4>
+
+            <p>Receive personalized AI career recommendations.</p>
+
+            <a href="{% url 'career_guidance' %}" class="btn btn-info mt-3">
+                Explore
+            </a>
+
         </div>
+
     </div>
 
-    <div class="col-md-4">
-        <div class="card shadow h-100">
-            <div class="card-body text-center">
-                <h1>👤</h1>
-                <h5>Profile</h5>
-                <p>View your account details.</p>
-                <a href="/profile/" class="btn btn-secondary">Profile</a>
-            </div>
+    <div class="col-lg-4 col-md-6">
+
+        <div class="dashboard-card">
+
+            <i class="bi bi-briefcase-fill"></i>
+
+            <h4>Job Recommendations</h4>
+
+            <p>Find jobs based on your skills and interests.</p>
+
+            <a href="{% url 'jobs' %}" class="btn btn-primary mt-3">
+                View Jobs
+            </a>
+
         </div>
+
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+
+        <div class="dashboard-card">
+
+            <i class="bi bi-person-circle"></i>
+
+            <h4>My Profile</h4>
+
+            <p>Manage your account details and resume information.</p>
+
+            <a href="{% url 'profile' %}" class="btn btn-secondary mt-3">
+                Profile
+            </a>
+
+        </div>
+
     </div>
 
 </div>

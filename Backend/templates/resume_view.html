@@ -1,46 +1,91 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Resume</title>
+{% extends "base.html" %}
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
+{% block content %}
 
-<body>
+<div class="card p-5">
 
-<div class="container mt-5">
+<div class="text-center mb-4">
 
-<div class="card shadow p-4">
+<h1>
 
-<h2 class="text-center mb-4">My Resume</h2>
+{{ resume.name }}
+
+</h1>
+
+<p>
+
+{{ resume.email }}
+
+|
+
+{{ resume.phone }}
+
+</p>
+
+</div>
 
 <hr>
 
-<h4>{{ resume.full_name }}</h4>
+<h3>
 
-<p><strong>Phone:</strong> {{ resume.phone }}</p>
+Career Objective
 
-<p><strong>Email:</strong> {{ resume.email }}</p>
+</h3>
 
-<p><strong>Education:</strong> {{ resume.education }}</p>
+<p>
 
-<p><strong>Skills:</strong></p>
+{{ resume.objective }}
 
-<p>{{ resume.skills }}</p>
-<a href="/download/" class="btn btn-primary mt-3">
-    📥 Download Resume PDF
+</p>
+
+<h3>
+
+Skills
+
+</h3>
+
+<p>
+
+{{ resume.skills }}
+
+</p>
+
+<h3>
+
+Projects
+
+</h3>
+
+<p>
+
+{{ resume.projects }}
+
+</p>
+
+<h3>
+
+Education
+
+</h3>
+
+<p>
+
+{{ resume.education }}
+
+</p>
+
+<div class="text-center mt-5">
+
+<a href="#"
+
+class="btn btn-primary">
+
+Download PDF
+
 </a>
-<a href="/edit_resume/" class="btn btn-warning mt-3">
-    ✏️ Edit Resume
-</a>
-<a href="{% url 'delete_resume' %}"
-   class="btn btn-danger mt-3"
-   onclick="return confirm('Are you sure you want to delete your resume?');">
-   🗑 Delete Resume
-</a>
+
 </div>
 
 </div>
 
-</body>
-</html>
+{% endblock %}
