@@ -1,100 +1,189 @@
 # 🚀 CareerPilot AI
 
-An AI-powered career guidance platform built with Django that helps students create ATS-friendly resumes, analyze resumes using AI, practice interviews, receive career guidance, and discover job opportunities.
+> **An AI-Powered Career Guidance Platform built with Django**
+
+CareerPilot AI helps students and job seekers build professional ATS-friendly resumes, analyze resumes using AI, prepare for interviews, receive career guidance, and discover job opportunities—all from one platform.
 
 ---
 
-## 📌 Features
+## ✨ Features
 
-- 🔐 User Registration & Login
-- 📄 ATS Resume Builder
-- 👀 Resume Preview
-- 📥 PDF Resume Download
-- 🤖 AI Resume Analyzer
-- 🎤 AI Interview Practice
-- 🧭 AI Career Guidance
+- 📄 ATS-Friendly Resume Builder
+- 🤖 AI Resume Analyzer (Gemini AI)
+- 🎯 AI Career Guidance
+- 🎤 AI Interview Question Generator
 - 💼 Job Recommendation System
-- 👤 User Profile Dashboard
-- 📱 Responsive Bootstrap UI
+- 👤 User Registration & Login
+- 📥 Resume PDF Download
+- 📱 Responsive & Modern UI
+- 🔒 Secure Authentication
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
-### Frontend
-- HTML5
-- CSS3
-- Bootstrap 5
-- Bootstrap Icons
-- Google Fonts
-
-### Backend
-- Python
-- Django
-
-### Database
-- SQLite (Development)
-- PostgreSQL Ready
-
-### AI
-- Google Gemini API
-
-### Others
-- ReportLab (PDF)
-- Git
-- GitHub
+| Technology | Used For |
+|------------|----------|
+| Python | Backend |
+| Django | Web Framework |
+| HTML5 | Frontend |
+| CSS3 | Styling |
+| Bootstrap 5 | Responsive UI |
+| SQLite | Database |
+| Google Gemini AI | AI Features |
+| ReportLab | PDF Resume Generation |
+| Git & GitHub | Version Control |
 
 ---
 
-## 📷 Screenshots
-
-Add screenshots here after uploading them.
-
-Example:
+## 📸 Screenshots
 
 ### Dashboard
 
 ![Dashboard](screenshots/dashboard.png)
 
+### Resume Builder
+
+![Resume Builder](screenshots/resume-builder.png)
+
+### Resume Analyzer
+
+![Resume Analyzer](screenshots/resume-analyzer.png)
+
+### Interview Preparation
+
+![Interview](screenshots/interview.png)
+
+### Career Guidance
+
+![Career Guidance](screenshots/career-guidance.png)
+
+### Profile
+
+![Profile](screenshots/profile.png)
+
 ---
 
-## Installation
+## 📂 Project Structure
 
-```bash
-git clone https://github.com/YOUR_USERNAME/CareerPilotAI.git
-
-cd CareerPilotAI
-
-python -m venv venv
-
-venv\Scripts\activate
-
-pip install -r requirements.txt
-
-python manage.py migrate
-
-python manage.py runserver
+```text
+CareerPilotAI/
+│
+├── backend/
+│   ├── accounts/
+│   ├── careerpilot/
+│   ├── static/
+│   ├── templates/
+│   ├── manage.py
+│
+├── screenshots/
+├── requirements.txt
+├── README.md
+└── render.yaml
 ```
 
 ---
 
-## Future Enhancements
+## ⚙️ Installation
 
-- Resume Templates
-- AI Cover Letter Generator
-- Email Notifications
-- Admin Dashboard
-- Live Job API Integration
-- Interview Score Analysis
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/shwetamudbikar2003-lang/CareerPilotAI.git
+```
+
+### 2️⃣ Go to Project Folder
+
+```bash
+cd CareerPilotAI
+```
+
+### 3️⃣ Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+### 4️⃣ Activate Virtual Environment
+
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+**Linux/Mac**
+
+```bash
+source venv/bin/activate
+```
+
+### 5️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 6️⃣ Run Migrations
+
+```bash
+cd backend
+python manage.py migrate
+```
+
+### 7️⃣ Start the Server
+
+```bash
+python manage.py runserver
+```
+
+Open your browser:
+
+```
+http://127.0.0.1:8000/
+```
 
 ---
 
-## Author
+## 🚀 Future Enhancements
+
+- 📊 Resume ATS Score Dashboard
+- 📈 Career Progress Tracking
+- 🔔 Job Alerts
+- 📹 Mock Interview with AI
+- ☁️ Cloud Resume Storage
+- 🌐 Deployment on Render
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork this repository
+2. Create a new branch
+3. Commit your changes
+4. Push to your branch
+5. Open a Pull Request
+
+---
+
+## 👩‍💻 Author
 
 **Shweta Mudbikar**
 
-B.E. Electronics & Communication Engineering
+🎓 Electronics & Communication Engineering
 
-Python | Django | AI | Full Stack Development
+🔗 GitHub: https://github.com/shwetamudbikar2003-lang
 
 ---
+
+## ⭐ Support
+
+If you found this project helpful, please give it a **⭐ Star** on GitHub.
+
+It motivates me to build more projects and improve this one.
+
+---
+
+# 🚀 Thank You for Visiting!
